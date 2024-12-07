@@ -8,14 +8,16 @@
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: black;
 }
 
 nav{
     width: 100%;
     height: 10vh;
-    position: sticky;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
 }
 .nav-container{
     width: 100%;
@@ -28,6 +30,14 @@ nav{
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;          
+    align-items: center;     
+    justify-content: center; 
+    transition: transform 0.3s ease;
 }
 .logo span{
     color: #5302bd;
@@ -43,7 +53,18 @@ nav{
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
-.nav-container .links{
+
+.nav-container .link.active a {
+    color: #5302bd;
+    text-underline-position: below;
+}
+
+.nav-container .link a {
+    color: black;  
+    text-decoration: none;
+}
+
+.nav-container .links {
     display: flex;
 }
 .nav-container .links a{
@@ -94,9 +115,16 @@ nav{
 .dropdown .links a:hover{
     background-color: #5302bd;
 }
+
 section{
     width: 100%;
     height: 90vh;
+    padding-top: 10vh;
+    scroll-margin-top: 10vh;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 .main-container{
     width: 100%;
@@ -104,21 +132,24 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 30px;
 }
 .main-container .image{
-    width: 500px;
-    height: 80vh;
+    width: 400px;
+    height: 500px;
     border-radius: 100%;
     overflow: hidden;
-    background-image: url("main.jpg");
     box-shadow: 0 0 50px #5302bd;
 }
 .main-container .image img{
     width: 100%;
+    height: 100%;
 }
 .main-container .image:hover{
     animation: animate 1.5s ease-in-out infinite;
 }
+
+
 @keyframes animate {
     0%{
         scale: 1;
@@ -195,6 +226,24 @@ section{
     font-weight: 700;
     box-shadow: 0 0 40px #5302bd;
 }
+
+hr{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
 @media (max-width:884px) {
     nav .logo{
         position: absolute;

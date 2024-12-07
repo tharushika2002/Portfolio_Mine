@@ -5,56 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/education.css">
+    <link rel="stylesheet" href="/css/skill.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
     <title>Ruchini Portfolio</title>
+
 </head>
 <body>
     <nav>
         <div class="nav-container">
+            <a href="#home" class="logo-link">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 Ruchini <span>Thilakarathna</span>
-            </div>
+            </div></a>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Project</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home"></a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#education">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Project</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
         <div class="dropdown">
             <div class="links">
-                <a href="index.html">Home</a>
-                <a href="about.html" >About </a>
-                <a href="skills.html">Skills</a>
+                <a href="#home">Home</a>
+                <a href="#about" >About </a>
+                <a href="#about" >About </a>
+                <a href="#skills">Skills</a>
                 <a href="#">Project</a>
                 <a href="#">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
-    <section>
+
+
+    <section id="home">
         <div class="main-container">
+
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <!--<img src="main.jpg" alt="" class="imageMain">-->
+                <img src="main.jpg" alt="" class="imageMain">
             </div>
+
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Ruchini</span></h1>
+
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+
                 <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.</p>
+
                 <div class="social-links">
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
                 </div>
+
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
                     <button>Hire me</button>
                 </div>
+
             </div>
+
         </div>
     </section>
+
+
+    <section id="about">
+        <div class="about-container">
+
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
+                <p>Hello</p>
+            </div>
+
+            <div class="about-content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000"><span>About me</span></h1>
+
+                <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">Creative and detail-oriented UI/UX design enthusiast with a strong foundation in web development, including HTML, CSS, and JavaScript. Currently a third-year undergraduate at SLIIT, I bring fresh, innovative ideas to every project and have extensive experience using Figma to design intuitive and user-friendly interfaces. Proficient in version control and skilled at working collaboratively in team-oriented environments. Passionate about blending technical expertise with creative thinking to deliver impactful digital experiences. Excited to contribute to forwardthinking projects while continuously advancing my skills in design and development.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div>
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000" style="color: white;"><span>Education</span></h1>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div>
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000" style="color: white;"><span>Skill</span></h1>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div>
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000" style="color: white;"><span>Projects</span></h1>
+        </div>
+    </section>
+
+
+    <section id="contact">
+
+        <div class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1800">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    
+    <footer class="footer">
+        <hr>
+        <p>© 2024 Ruchini Thilakarathna. All rights reserved.</p>
+    </footer>
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({offset:0});
